@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar na Plaži</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Naslovna</a></li>
+                <li><a href="#about">O nama</a></li>
+                <li><a href="#menu">Meni</a></li>
+                <li><a href="#gallery">Galerija</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#" onclick="changeLanguage('hr')">HR</a></li>
+                <li><a href="#" onclick="changeLanguage('en')">EN</a></li>
+            </ul>
+        </nav>
+        <h1>Coco Loco Beach & Cocktail Bar</h1>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" style="background-image: url('./images/1.jpg');"></div>
+            <div class="slide" style="background-image: url('./images/3.jpg');"></div>
+            <div class="slide" style="background-image: url('./images/6.jpg');"></div>
+        </div>
+    </div>
+
+  
+    <section id="about">
+        <h2>O nama</h2>
+        <p>Naš bar na plaži je savršeno mjesto za opuštanje i uživanje u sunčanim danima uz osvježavajuće piće i ukusnu hranu.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Meni</h2>
+        <h3>Hrana</h3>
+        <ul>
+            <li>Predjela</li>
+            <li>Glavna jela</li>
+            <li>Deserti</li>
+        </ul>
+        <h3>Piće</h3>
+        <ul>
+            <li>Kokteli</li>
+            <li>Bezalkoholna pića</li>
+            <li>Alkoholna pića</li>
+        </ul>
+    </section>
+
+ 
+    <section id="gallery">
+        <h2>Galerija</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" style="background-image: url('./images/1.jpg');"></div>
+            <div class="gallery-item" style="background-image: url('./images/3.jpg');"></div>
+            <div class="gallery-item" style="background-image: url('./images/6.jpg');"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Ime:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Poruka:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Pošalji</button>
+        </form>
+        <div class="contact-info">
+            <p>Telefon: +385 123 4567</p>
+            <p>Email: info@barnaplazi.hr</p>
+            <p>Adresa: Plaža 1, 21000 Split, Hrvatska</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        </div>
+        <p>&copy; 2024 Bar na Plaži</p>
+    </footer>
+
+ 
+    <audio id="background-music" loop autoplay>
+        <source src="./audio/tropical-sun-all-good-folks-main-version-02-05-8223.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+ 
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup1')">&times;</span>
+            <p>Dobrodošli u naš bar na plaži!</p>
+        </div>
+    </div>
+    <div class="popup" id="popup2">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">&times;</span>
+            <p>Opustite se i uživajte u sunčanju uz naše koktele!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
